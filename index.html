@@ -2,18 +2,18 @@
 <script src="lib/d3.js"></script>
 <script src="lib/raphael.min.js"></script>
 <script src="lib/jquery.min.js"></script>
-<script src="lib/chinamap.js"></script>
 <script src="data/map.js"></script>
 <script src="data/point.js"></script>
+<script src="lib/chinamap.js"></script>
 
 <script>
 $(document).ready(function(){
     var map = $("#map").chinamap({});
-    map.point(1);
-    map.point(2);
-    map.line(1, 2);
-    map.point(10);
-    map.flash(10, true);
+    map.point(36);
+    map.point(40);
+    map.line(36, 40);
+    map.point(73);
+    map.flash(73, true);
     //map.setSize(1200, 1000);
 });
 </script>
