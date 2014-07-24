@@ -2,7 +2,7 @@ var data_map = {
     "type": "FeatureCollection",
     "features": [{
         "type": "Feature",
-        "id": "65",
+        "id": 32,
         "properties": {
             "name": "新疆",
             "cp": [84.9023, 41.748],
@@ -168,7 +168,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "54",
+        "id": 27,
         "properties": {
             "name": "西藏",
             "cp": [88.7695, 31.6846],
@@ -330,7 +330,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "15",
+        "id": 6,
         "properties": {
             "name": "内蒙古",
             "cp": [117.5977, 44.3408],
@@ -570,7 +570,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "63",
+        "id": 30,
         "properties": {
             "name": "青海",
             "cp": [96.2402, 35.4199],
@@ -720,7 +720,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "51",
+        "id": 24,
         "properties": {
             "name": "四川",
             "cp": [102.9199, 30.1904],
@@ -863,7 +863,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "23",
+        "id": 9,
         "properties": {
             "name": "黑龙江",
             "cp": [128.1445, 48.5156],
@@ -999,7 +999,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "62",
+        "id": 29,
         "properties": {
             "name": "甘肃",
             "cp": [95.7129, 40.166],
@@ -1189,7 +1189,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "53",
+        "id": 26,
         "properties": {
             "name": "云南",
             "cp": [101.8652, 25.1807],
@@ -1330,7 +1330,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "45",
+        "id": 21,
         "properties": {
             "name": "广西",
             "cp": [108.2813, 23.6426],
@@ -1430,7 +1430,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "43",
+        "id": 19,
         "properties": {
             "name": "湖南",
             "cp": [111.5332, 27.3779],
@@ -1520,7 +1520,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "61",
+        "id": 28,
         "properties": {
             "name": "陕西",
             "cp": [109.5996, 35.6396],
@@ -1619,7 +1619,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "44",
+        "id": 20,
         "properties": {
             "name": "广东",
             "cp": [113.4668, 22.8076],
@@ -1726,7 +1726,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "22",
+        "id": 8,
         "properties": {
             "name": "吉林",
             "cp": [126.4746, 43.5938],
@@ -1820,7 +1820,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "13",
+        "id": 4,
         "properties": {
             "name": "河北",
             "cp": [115.4004, 37.9688],
@@ -1950,7 +1950,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "42",
+        "id": 18,
         "properties": {
             "name": "湖北",
             "cp": [112.2363, 31.1572],
@@ -2042,7 +2042,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "52",
+        "id": 25,
         "properties": {
             "name": "贵州",
             "cp": [106.6113, 26.9385],
@@ -2136,7 +2136,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "37",
+        "id": 16,
         "properties": {
             "name": "山东",
             "cp": [118.7402, 36.4307],
@@ -2216,7 +2216,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "36",
+        "id": 15,
         "properties": {
             "name": "江西",
             "cp": [116.0156, 27.29],
@@ -2293,7 +2293,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "41",
+        "id": 17,
         "properties": {
             "name": "河南",
             "cp": [113.4668, 33.8818],
@@ -2371,7 +2371,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "21",
+        "id": 7,
         "properties": {
             "name": "辽宁",
             "cp": [122.3438, 41.0889],
@@ -2439,7 +2439,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "14",
+        "id": 5,
         "properties": {
             "name": "山西",
             "cp": [112.4121, 37.6611],
@@ -2506,7 +2506,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "34",
+        "id": 13,
         "properties": {
             "name": "安徽",
             "cp": [117.2461, 32.0361],
@@ -2589,7 +2589,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "35",
+        "id": 14,
         "properties": {
             "name": "福建",
             "cp": [118.3008, 25.9277],
@@ -2660,7 +2660,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "33",
+        "id": 12,
         "properties": {
             "name": "浙江",
             "cp": [120.498, 29.0918],
@@ -2722,7 +2722,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "32",
+        "id": 11,
         "properties": {
             "name": "江苏",
             "cp": [120.0586, 32.915],
@@ -2793,7 +2793,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "50",
+        "id": 23,
         "properties": {
             "name": "重庆",
             "cp": [107.7539, 30.1904],
@@ -2874,7 +2874,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "64",
+        "id": 31,
         "properties": {
             "name": "宁夏",
             "cp": [105.9961, 37.3096],
@@ -2928,7 +2928,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "46",
+        "id": 22,
         "properties": {
             "name": "海南",
             "cp": [109.9512, 19.2041],
@@ -2962,7 +2962,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "71",
+        "id": 35,
         "properties": {
             "name": "台湾",
             "cp": [121.0254, 23.5986],
@@ -2993,7 +2993,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "11",
+        "id": 2,
         "properties": {
             "name": "北京",
             "cp": [116.4551, 40.2539],
@@ -3032,7 +3032,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "12",
+        "id": 3,
         "properties": {
             "name": "天津",
             "cp": [117.4219, 39.4189],
@@ -3070,7 +3070,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "31",
+        "id": 10,
         "properties": {
             "name": "上海",
             "cp": [121.4648, 31.2891],
@@ -3095,7 +3095,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "81",
+        "id": 33,
         "properties": {
             "name": "香港",
             "cp": [114.2578, 22.3242],
@@ -3121,7 +3121,7 @@ var data_map = {
         }
     }, {
         "type": "Feature",
-        "id": "82",
+        "id": 34,
         "properties": {
             "name": "澳门",
             "cp": [113.5547, 22.1484],
