@@ -8,7 +8,13 @@
 
 <script>
 $(document).ready(function(){
-    var map = $("#map").chinamap({});
+    var map = $("#map").chinamap({
+        tooltip : {
+            format : function() {
+                return this.data("id")+":"+this.data("name")+":"+this.data("data");
+            }
+        }
+    });
     map.area({});
     map.point({36:136,90:120,100:170,190:190, 99:99});
 
