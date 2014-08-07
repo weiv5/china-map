@@ -8,6 +8,18 @@
 
 <script>
 $(document).ready(function(){
+    var data = {36:8, 66: 5, 104: 3, 171: 4, 150: 5, 244: 7, 238:5, 281: 7, 232: 8, 357: 7, 373: 6};
+    var flash = {};
+    for (var i=1; i<400; i++) {
+        var r = Math.random()*10;
+        if (r > 9) {
+            var num = Math.random()*10;
+            data[i] = Math.random()*10;
+            if (num > 5) {
+                flash[i] = i;
+            }
+        }
+    }
     var map = $("#map").chinamap({
         tooltip : {
             format : function() {
@@ -16,23 +28,40 @@ $(document).ready(function(){
         }
     });
     map.area({});
-    map.point({36:136,90:120,100:170,190:190, 99:99});
+    map.point(data);
 
-    $("#flash").click(function(){
-        map.flash(90, true);
+    $("#flash").click(function() {
+        for (var i in flash) {
+            map.flash(i, true);
+        }
     });
 
     $("#flash-once").click(function(){
-        map.flash(190);
+        map.flash(36);
     });
 
     $("#stop").click(function(){
-        map.stopFlash(90);
+        map.stopFlash();
     });
 
     $("#line").click(function(){
-        map.line(36, 100);
+        if (n == 1) {
+            map.line(36, 66);
+            map.line(36, 104);
+            map.line(36, 171);
+            map.line(36, 150);
+            map.line(36, 244);
+            n = 2;
+        } else {
+            map.line(36, 238);
+            map.line(36, 281);
+            map.line(36, 232);
+            map.line(36, 357);
+            map.line(36, 373);
+            n = 1;
+        }
     });
+    var n = 1;
 });
 </script>
 <body style='background:#1b1b1b;'>
