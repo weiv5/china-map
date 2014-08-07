@@ -8,66 +8,33 @@
 
 <script>
 $(document).ready(function(){
-    var data = {36:8, 66: 5, 104: 3, 171: 4, 150: 5, 244: 7, 238:5, 281: 7, 232: 8, 357: 7, 373: 6};
-    var flash = {};
-    for (var i=1; i<400; i++) {
-        var r = Math.random()*10;
-        if (r > 9) {
-            var num = Math.random()*10;
-            data[i] = Math.random()*10;
-            if (num > 5) {
-                flash[i] = i;
-            }
+    var ids = [36];
+    var point = {36:6};
+    for (var i=37; i<376; i++) {
+        if (Math.random() > 0.8) {
+            ids.push(i);
+            point[i] = Math.random()*10;
         }
     }
-    var map = $("#map").chinamap({
-        tooltip : {
-            format : function() {
-                return this.data("id")+":"+this.data("name")+":"+this.data("data");
-            }
-        }
-    });
-    map.area({});
-    map.point(data);
+    var map = $("#map").chinamap({}).area({}).point(point);
 
     $("#flash").click(function() {
-        for (var i in flash) {
-            map.flash(i, true);
+        for (var i in ids) {
+            if (Math.random() > 0.8) {
+                map.flash(ids[i], true);
+            }
         }
+        setInterval(function() {
+            for (var i in ids) {
+                if (Math.random() < 0.05) {
+                    map.line(36, ids[i]);
+                }
+            }
+        }, 4000);
     });
-
-    $("#flash-once").click(function(){
-        map.flash(36);
-    });
-
-    $("#stop").click(function(){
-        map.stopFlash();
-    });
-
-    $("#line").click(function(){
-        if (n == 1) {
-            map.line(36, 66);
-            map.line(36, 104);
-            map.line(36, 171);
-            map.line(36, 150);
-            map.line(36, 244);
-            n = 2;
-        } else {
-            map.line(36, 238);
-            map.line(36, 281);
-            map.line(36, 232);
-            map.line(36, 357);
-            map.line(36, 373);
-            n = 1;
-        }
-    });
-    var n = 1;
 });
 </script>
 <body style='background:#1b1b1b;'>
 <div id="map" style="width:1200px;height:800px;"></div>
-<a href="javascript:;" id="flash">闪动循环</a>&nbsp;&nbsp;&nbsp;
-<a href="javascript:;" id="flash-once">闪一次</a>&nbsp;&nbsp;&nbsp;
-<a href="javascript:;" id="stop">停止闪动</a>&nbsp;&nbsp;&nbsp;
-<a href="javascript:;" id="line">line</a>
+<a href="javascript:;" id="flash">flash</a>
 </body>
