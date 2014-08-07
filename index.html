@@ -18,23 +18,20 @@ $(document).ready(function(){
     }
     var map = $("#map").chinamap({}).area({}).point(point);
 
-    $("#flash").click(function() {
+    function line() {
         for (var i in ids) {
             if (Math.random() > 0.8) {
-                map.flash(ids[i], true);
+                map.flash(ids[i]);
+            }
+            if (Math.random() > 0.95) {
+                map.line(36, ids[i]);
             }
         }
-        setInterval(function() {
-            for (var i in ids) {
-                if (Math.random() < 0.05) {
-                    map.line(36, ids[i]);
-                }
-            }
-        }, 4000);
-    });
+        setTimeout(line, 3000);
+    }
+    line();
 });
 </script>
 <body style='background:#1b1b1b;'>
 <div id="map" style="width:1200px;height:800px;"></div>
-<a href="javascript:;" id="flash">flash</a>
 </body>
