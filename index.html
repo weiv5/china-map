@@ -12,8 +12,14 @@ $(document).ready(function(){
     for (var i=37; i<376; i++) {
         if (Math.random() > 0.8) point[i] = Math.random()*10;
     }
+    
+    var data = {};
+    for (var i in data_map.features) {
+        data[data_map.features[i].id] = Math.random()*10;
+    }
 
     var map = $("#map").chinamap({}).area({}).point(point);
+    map.area(data);
     function line() {
         for (var i in point) {
             if (Math.random() > 0.8) {
